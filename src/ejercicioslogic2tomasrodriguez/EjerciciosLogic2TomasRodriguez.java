@@ -76,9 +76,12 @@ public class EjerciciosLogic2TomasRodriguez {
         return a + b + c;
     }
 
-    
+    /************************************MAIN***********************************
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
-        // creamos objeto de esta clase (Ejercicios basicosJava)
+        // creamos objeto de esta clase 
         EjerciciosLogic2TomasRodriguez logic2 = new EjerciciosLogic2TomasRodriguez(); 
     }
 }
