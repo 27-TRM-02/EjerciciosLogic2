@@ -52,24 +52,33 @@ public class EjerciciosLogic2TomasRodriguez {
         return (a == 13) ? 0 : (b == 13) ? a : (c == 13) ? a + b : a + b + c;
     }
     
+    /**
+     * Ejercicio 4 noTeenSum
+     * Devuelve la suma de los 3 enteros pasados por parámetro
+     * Si alguno de los números, está comprendido entre 13 y 19, salvo el
+     * 15 y el 16, ese número será = 0
+     * *************************************************************************
+     * @param a
+     * @param b
+     * @param c
+     * @return 
+     */
+    public int noTeenSum(int a, int b, int c) {
+        if (a != 15 && a != 16 && a >= 13 && a <= 19){
+          a = 0;
+        }
+        if (b != 15 && b != 16 && b >= 13 && b <= 19){
+          b = 0;
+        }
+        if (c != 15 && c != 16 && c >= 13 && c <= 19){
+          c = 0;
+        }
+        return a + b + c;
+    }
+
+    
     public static void main(String[] args) {
         // creamos objeto de esta clase (Ejercicios basicosJava)
-        EjerciciosLogic2TomasRodriguez ejercicio = new EjerciciosLogic2TomasRodriguez(); 
-        // Salida por la terminal de los resultados de los ejercicios
-        // Ejercicio1 makeBricks
-        System.out.println(ejercicio.makeBricks(3, 1, 8));
-        System.out.println(ejercicio.makeBricks(3, 1, 9));
-        System.out.println(ejercicio.makeBricks(3, 2, 10));
-        System.out.println(ejercicio.makeBricks(1, 4, 12));
-        System.out.println(ejercicio.makeBricks(2, 20, 98));
-        // Ejercicio2 loneSum
-        // Ejercicio3
-        // Ejercicio4
-        // Ejercicio5
-        // Ejercicio6
-        // Ejercicio7
-        // Ejercicio8
-        // Ejercicio9
-        
+        EjerciciosLogic2TomasRodriguez logic2 = new EjerciciosLogic2TomasRodriguez(); 
     }
 }
